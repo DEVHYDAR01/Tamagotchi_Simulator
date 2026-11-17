@@ -1,7 +1,7 @@
 [project]
 name = "tamagotchi-simulator"
 version = "0.1.0"
-description = "Add your description here"
+description = "A command-line Tamagotchi virtual pet simulator."
 readme = "README.md"
 authors = [
     { name = "DEVHYDAR01", email = "aliyuahmaad60@gmail.com" }
@@ -10,7 +10,7 @@ requires-python = ">=3.13"
 dependencies = []
 
 [project.scripts]
-tamagotchi-simulator = "tamagotchi_simulator:main"
+tamagotchi-simulator = "tamagotchi_simulator.main:main"
 
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
