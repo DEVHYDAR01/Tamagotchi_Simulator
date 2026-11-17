@@ -17,6 +17,7 @@ It uses only the Python standard library and is managed with `uv`.
 - Statistics for living and dead pets.
 - JSON save and load with validation.
 - Friendly error messages for bad input and broken save files.
+- A Tkinter graphical interface alongside the command-line version.
 
 ## Requirements
 
@@ -37,6 +38,18 @@ It can also be started as a module:
 ```bash
 uv run python -m tamagotchi_simulator.main
 ```
+
+## Graphical interface
+
+The Tkinter version uses the same game logic and the same save file as the CLI:
+
+```bash
+uv run tamagotchi-gui
+```
+
+It shows one card per Tamagotchi with health, hunger, boredom and exhaustion
+bars. Select a pet on its card, then use the Feed, Play, Sleep and Heal buttons.
+Statistics and the activity log update after every action.
 
 ## How to play
 
@@ -103,7 +116,8 @@ src/tamagotchi_simulator/
 ├── stats.py         statistics functions
 ├── storage.py       JSON save and load
 ├── ui.py            command-line menu and display
-└── main.py          program entry point
+├── gui.py           Tkinter graphical interface
+└── main.py          command-line program entry point
 ```
 
 All gameplay numbers are in `config.py`, so they can be tuned without changing
